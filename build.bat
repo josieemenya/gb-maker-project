@@ -1,4 +1,15 @@
 REM Automatically generated from Makefile
-mkdir gb-maker-project\build
-cd gb-maker-project\src
-lcc -o ..\build\Example.gb main.c
+
+set "BUILD_DIR=..\build\"
+
+echo Checking directory: "%BUILD_DIR%"
+
+if exist "%BUILD_DIR%" (
+    echo Directory exists.
+    cd gb-maker-project\src
+    lcc -o ..\build\mega_example.gb main.c
+
+) else (
+    echo Directory does not exist, creating...
+    mkdir "%BUILD_DIR%"
+)
