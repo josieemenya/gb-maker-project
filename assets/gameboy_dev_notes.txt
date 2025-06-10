@@ -1,0 +1,13 @@
+gb screen consists of three layers :
+- background layer : bottom layer, usually associated with map layer
+- sprite layer : 2nd layer
+- screen layer : top layer, points etc.
+
+sprite layer : 
+- can only have a imited no. of sprites on screen : (40)
+- can only have 10 overlapping in a horizontal row at once
+
+creating sprites :
+ 
+- you can have 8px X 8px, 8px X 16px or to get bigger ones you can combine spries together (meta sprites)
+- files are supposed to be in c : https://lvgl.io/tools/imageconverter - used this to convert some .png to c files, only time will tell if it worked
