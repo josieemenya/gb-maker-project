@@ -4,21 +4,23 @@
 
 #include <stdint.h>
 #include <stdio.h>
-#include "../assets/tsetBones.c"
+#include "../assets/tset_map.h"
 
 
 
 int main(void){
 
-    set_sprite_data(0, 16, tsetBones);
-    set_sprite_tile(0, 3); // use tile 3
-    move_sprite(0, 80, 72); // visible position
-
-    SHOW_SPRITES;
+    SHOW_BKG;
     DISPLAY_ON;
+
+    set_bkg_data(0, tset_map_TILE_COUNT, tset_map_tiles);
+    set_bkg_tiles(0, 0, 20, 18, tset_map_map);
+
+
 
     while(1) {
         wait_vbl_done();
     }
-    return 0;
+
+    //return 0;
 }
