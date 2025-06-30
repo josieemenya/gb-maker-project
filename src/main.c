@@ -15,7 +15,8 @@ int main(void){
 
     set_bkg_data(0, tset_map_TILE_COUNT, tset_map_tiles);
     set_bkg_tiles(0, 0, 20, 18, tset_map_map);
-
+    
+    set_bkg_palette(0, 1, tset_map_palettes); // make sure you have this or it'll just appear like a blank screen
 
 
     while(1) {

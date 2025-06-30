@@ -15,6 +15,4 @@ if not exist "build" (
 
 cd src
 
-lcc -c main.c -o main.rel
-lcc -c ..\assets\tset_map.c -o tset_map.rel
 lcc ..\assets\tset_map.c main.c  -o ..\build\mega_exwwample.gb -Wm-yc 
