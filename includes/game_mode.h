@@ -1,3 +1,6 @@
+#ifndef GAME_MODE_H
+#define GAME_MODE_H
+
 #include <gb/gb.h>
 #include <gb/sgb.h>
 #include <gbdk/console.h>
@@ -12,3 +15,5 @@ typedef enum {
 
 
 } GameMode;
+
+#endif // GAME_MODE_H
